@@ -1,11 +1,11 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 alias update-aliases='source ~/.bash_aliases'
-alias git_rename_author="bash $DIR/git_rename_author.sh"
+alias git_rename_author="bash $DIR/src/git/git_rename_author.sh"
 
 # Dev
 ## Sanitize files
-crlf2lf (){ 
+crlf2lf (){
   if (( $# != 2 )); then
     >&2 echo "Usage : crlf2lf path_in path_out"
   else
