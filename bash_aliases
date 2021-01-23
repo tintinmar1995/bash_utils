@@ -27,7 +27,8 @@ ssh_tunnel () {
 }
 
 
-# IP and VPN
+# Network
 alias vpn='sudo protonvpn'
-alias scan_local='arp -a'
+alias scan_network='arp -a'
+alias scan_wifi='nmcli dev wifi'
 alias whatsmyip='curl ifconfig.me && echo'
