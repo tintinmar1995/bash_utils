@@ -1,0 +1,25 @@
+## CONGRATULATION DATASTORMER : you've made a brand new commit <3 !
+## Here is a template to help you talking about it.
+## First a SHORT DESCRIPTION using prefix (see help section)
+## "If applied, this commit will ..."
+
+
+## LONGER DESCRIPTION. WHY ? HOW ?
+
+
+## REFERENCES ##
+# Issue ID : Uncomment and enter bug-id
+# See : Uncomment and add some links
+# Tags : Uncomment and tags for searching with git log --grep
+
+
+### HELP FOR PREFIXES ###
+# feat : Create a feature.
+# test : Create (unit) tests.
+# config : Adjust dependencies or some config files.
+# model : Adjust hyperparameters.
+# drop : Delete some feature or test.
+# fix : Fix an issue e.g. bug, typo, accident, misstatement.
+# optim : A change that MUST be just about performance, e.g. speed up code.
+# doc : A change that MUST be only in the documentation, e.g. help files.
+# wording : A change that MUST be just refactoring/formating/rephrasing, e.g. indent line, trim space, edit a comment, doc, etc.

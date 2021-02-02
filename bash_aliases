@@ -4,8 +4,10 @@ alias update-aliases='source ~/.bash_aliases'
 
 # Dev
 ## Git
+alias gti="git"
 alias git_rename_author="bash $DIR/src/git/git_rename_author.sh"
 alias git_add_aliases="bash $DIR/src/git/git_add_aliases.sh"
+export commit_template_ds="$DIR/src/git/gitcommitmsg-ds.txt"
 ## Sanitize files
 crlf2lf (){
   if (( $# != 2 )); then
