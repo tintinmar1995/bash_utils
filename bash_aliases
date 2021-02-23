@@ -22,7 +22,16 @@ echo_md () {
 }
 ## Python
 alias jpyn='jupyter-notebook'
+alias py_pkg_v='cat $(find . | grep _version.py)'
+py_pkg_up() {
+  if (( $# != 1 )); then
+    >&2 echo "Usage : py_pkg_up '0.1.1'"
+  else
+    echo '__version__ = "'$1'"' > $(find . | grep _version.py)
+  fi  
 
+
+}
 # SSH
 ssh_tunnel () {
   ssh -L $2:localhost:$2 $1
