@@ -24,14 +24,12 @@ echo-md () {
 alias jpyn='jupyter-notebook'
 source "$DIR/src/py/pkg.sh"
 
-# SSH
-ssh-tunnel () {
-  ssh -L $2:localhost:$2 $1
-}
-
-
 # Network
 alias vpn='sudo protonvpn'
 alias scan-network='arp -a'
 alias scan-wifi='nmcli dev wifi'
 alias whatsmyip='curl ifconfig.me && echo'
+## SSH
+ssh-tunnel () {
+  ssh -L $2:localhost:$2 $1
+}
