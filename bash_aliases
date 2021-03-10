@@ -5,8 +5,8 @@ alias update-aliases='source ~/.bash_aliases'
 # Dev
 ## Git
 alias gti="git"
-alias git_rename_author="bash $DIR/src/git/git_rename_author.sh"
-alias git_add_aliases="bash $DIR/src/git/git_add_aliases.sh"
+alias git-rename-author="bash $DIR/src/git/git_rename_author.sh"
+alias git-add-aliases="bash $DIR/src/git/git_add_aliases.sh"
 export commit_template_ds="$DIR/src/git/gitcommitmsg-ds.txt"
 ## Sanitize files
 crlf2lf (){
@@ -17,7 +17,7 @@ crlf2lf (){
   fi
 }
 ## Markdown
-echo_md () {
+echo-md () {
   pandoc $1 | sed 's/<code/<code style="color:cyan;"/g'|  elinks -dump -dump-color-mode 1 | sed -r 's/^/   /g;s/ *$//' | (echo && cat && echo)
 }
 ## Python
@@ -25,13 +25,13 @@ alias jpyn='jupyter-notebook'
 source "$DIR/src/py/pkg.sh"
 
 # SSH
-ssh_tunnel () {
+ssh-tunnel () {
   ssh -L $2:localhost:$2 $1
 }
 
 
 # Network
 alias vpn='sudo protonvpn'
-alias scan_network='arp -a'
-alias scan_wifi='nmcli dev wifi'
+alias scan-network='arp -a'
+alias scan-wifi='nmcli dev wifi'
 alias whatsmyip='curl ifconfig.me && echo'
