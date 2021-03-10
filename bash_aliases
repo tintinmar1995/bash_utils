@@ -1,6 +1,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 alias update-aliases='source ~/.bash_aliases'
+alias cheatsheet-ls='find $PATH_BASH_UTILS | grep cheatsheet'
 
 # Dev
 ## Git
@@ -17,7 +18,7 @@ crlf2lf (){
   fi
 }
 ## Markdown
-echo-md () {
+cat-md () {
   pandoc $1 | sed 's/<code/<code style="color:cyan;"/g'|  elinks -dump -dump-color-mode 1 | sed -r 's/^/   /g;s/ *$//' | (echo && cat && echo)
 }
 ## Python
