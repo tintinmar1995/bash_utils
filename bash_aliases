@@ -4,6 +4,7 @@ alias update-aliases='source ~/.bash_aliases'
 alias cheatsheet-ls='find $PATH_BASH_UTILS | grep cheatsheet'
 
 # Dev
+alias htop-me='htop --user=$USER'
 ## Git
 alias gti="git"
 alias git-rename-author="bash $DIR/src/git/git_rename_author.sh"
@@ -22,8 +23,8 @@ cat-md () {
   pandoc $1 | sed 's/<code/<code style="color:cyan;"/g'|  elinks -dump -dump-color-mode 1 | sed -r 's/^/   /g;s/ *$//' | (echo && cat && echo)
 }
 ## Python
-alias jpyn='jupyter-notebook'
 source "$DIR/src/py/pkg.sh"
+source "$DIR/src/py/jpyn.sh"
 
 # Network
 alias vpn='sudo protonvpn'

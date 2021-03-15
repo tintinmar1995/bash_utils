@@ -7,7 +7,14 @@
 - pyenv virtualenv 3.9.0 BLABLA
 - exec "$SHELL"
 
-## JPYN & PYENV
+## JPYN & PyEnv
 - python -m ipykernel install --user --name=<my_env_name>
 - jupyter kernelspec list
 - jupyter kernelspec uninstall <my_env_name>
+
+## Autoreload
+
+- %load_ext autoreload
+- %autoreload 2
+
+
