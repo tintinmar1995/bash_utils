@@ -1,5 +1,5 @@
 echo CONFIG WORKSPACE..
-mkdir ~/dev ~/data ~/cache ~/srv
+mkdir ~/dev ~/data ~/cache ~/srv ~/logs
 
 echo CONFIG GIT..
 git-add-aliases
