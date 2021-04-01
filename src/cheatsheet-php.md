@@ -7,3 +7,9 @@
   error_reporting(E_ALL);
 ?>
 ```
+
+## SQL
+
+```php
+CURDATE() - INTERVAL 1 DAY
+```
