@@ -3,6 +3,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 alias update-aliases='source ~/.bash_aliases'
 alias cheatsheet-ls='find $PATH_BASH_UTILS | grep cheatsheet'
 
+# Cozy
+alias cozy-whats-new="bash $DIR/src/cozy/ls_recent.sh"
+
 # Dev
 alias htop-me='htop --user=$USER'
 ## Git
