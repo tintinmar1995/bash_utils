@@ -1,0 +1,5 @@
+- Git Clone Bash_Utils
+- Install Bash_Utils
+- Run workspace/setup.sh
+- Copy SSH.pub (config GitLab & GitHub)
+- Install PyEnv
