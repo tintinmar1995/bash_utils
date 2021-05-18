@@ -3,6 +3,7 @@
 ## Install PyEnv
 - https://github.com/pyenv/pyenv
 - https://github.com/pyenv/pyenv-virtualenv
+- https://github.com/pyenv/pyenv-update
 - pyenv install 3.9.0
 - pyenv virtualenv 3.9.0 BLABLA
 - exec "$SHELL"
