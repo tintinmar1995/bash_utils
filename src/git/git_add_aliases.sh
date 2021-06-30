@@ -1,5 +1,6 @@
 git config --global help.autocorrect 5
 
+git config --global alias.co checkout
 git config --global --remove-section alias
 
 git config --global alias.aliases "!git config --get-regexp '^alias\.'"
