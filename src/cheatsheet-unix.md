@@ -18,6 +18,14 @@ options :
 - T : files from file
 - v : verbose
 
+## CURL
+
+### POST
+
+```bash
+curl -X POST -F 'name=linuxize' -F 'email=linuxize@example.com' https://example.com/contact.php
+```
+
 ## Permissions 
 
 chmod octal file - change permissions of file
