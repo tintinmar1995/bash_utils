@@ -13,3 +13,4 @@ git config --global alias.slog "log --oneline"
 git config --global alias.wip '!git add -A && git commit -m "Wip"'
 git config --global alias.ignore "! echo $1 >> .gitignore"
 git config --global alias.ignored '! git ls-files --others --ignored --exclude-standard --directory && git ls-files --others -i --exclude-standard'
+git config --global alias.unfollowed 'update-index --assume-unchanged'
