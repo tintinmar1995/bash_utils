@@ -9,3 +9,5 @@ function py-pkg-up {
     echo '__version__ = "'$1'"' > $(find */_version.py)
   fi  
 }
+
+alias py-lint-whitespace="sed -i 's/[[:blank:]]*$//'"
