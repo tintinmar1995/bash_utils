@@ -37,5 +37,10 @@ alias scan-wifi='nmcli dev wifi'
 alias whatsmyip='curl ifconfig.me && echo'
 ## SSH
 ssh-tunnel () {
-  ssh -L $2:localhost:$2 $1
+  # Usage HOST PORTS...
+  cmd=$1;
+  for PORT in $(seq -s ' ' 2 $#); do
+    cmd=$cmd" -L ${!PORT}:localhost:${!PORT}";
+  done
+  ssh $cmd;
 }
