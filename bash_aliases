@@ -29,6 +29,7 @@ cat-md () {
 ## Python
 source "$DIR/src/py/pkg.sh"
 source "$DIR/src/py/jpyn.sh"
+source "$DIR/src/py/pyenv.sh"
 
 # Network
 alias vpn='sudo protonvpn'
