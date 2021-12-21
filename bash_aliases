@@ -27,6 +27,7 @@ cat-md () {
   pandoc $1 | sed 's/<code/<code style="color:cyan;"/g'|  elinks -dump -dump-color-mode 1 | sed -r 's/^/   /g;s/ *$//' | (echo && cat && echo)
 }
 ## Python
+source "$DIR/src/py/dev.sh"
 source "$DIR/src/py/pkg.sh"
 source "$DIR/src/py/jpyn.sh"
 source "$DIR/src/py/pyenv.sh"
