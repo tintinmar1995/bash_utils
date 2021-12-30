@@ -11,3 +11,5 @@ function py-pkg-up {
 }
 
 alias py-lint-whitespace="sed -i 's/[[:blank:]]*$//'"
+alias py-update-requirements="python update-requirements.py"
+alias py-upgrade-requirements="python upgrade-requirements.py"
