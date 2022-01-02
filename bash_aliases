@@ -33,7 +33,7 @@ source "$DIR/src/py/jpyn.sh"
 source "$DIR/src/py/pyenv.sh"
 
 # Network
-alias vpn='sudo protonvpn'
+alias vpn='protonvpn-cli'
 alias scan-network='arp -a'
 alias scan-wifi='nmcli dev wifi'
 alias whatsmyip='curl ifconfig.me && echo'
