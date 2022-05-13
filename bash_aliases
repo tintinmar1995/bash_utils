@@ -3,9 +3,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 alias update-aliases='source ~/.bash_aliases'
 alias cheatsheet-ls='find $PATH_BASH_UTILS | grep cheatsheet'
 
-# Cozy
-alias cozy-whats-new="bash $DIR/src/cozy/ls_recent.sh"
-
 # Dev
 alias htop-me='htop --user=$USER'
 ## Git
@@ -37,6 +34,9 @@ alias vpn='protonvpn-cli'
 alias scan-network='arp -a'
 alias scan-wifi='nmcli dev wifi'
 alias whatsmyip='curl ifconfig.me && echo'
+curl-json () {
+  curl -s $1 | python -m json.tool
+}
 ## SSH
 ssh-tunnel () {
   # Usage HOST PORTS...
