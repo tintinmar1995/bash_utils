@@ -18,4 +18,10 @@
 - %load_ext autoreload
 - %autoreload 2
 
+## Show the whole dataframe
+
+```python
+from IPython.display import display, HTML
+display(HTML(df.to_html()))
+```
 

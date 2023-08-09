@@ -1,5 +1,14 @@
 # Cheatsheet Bash
 
+## Process
+
+Background & Foreground
+- Ctrl + Z to pause
+- bg to run in background
+- gf to bring back in foreground
+
+Ctrl + S to freeze terminal  and Ctrl + Q to unfreeze
+
 ## Compressing 
 
 tar cf file.tar files - tar files into file.tar
