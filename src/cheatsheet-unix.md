@@ -11,6 +11,8 @@ Ctrl + S to freeze terminal  and Ctrl + Q to unfreeze
 
 ## Compressing 
 
+### TARBALLS
+
 tar cf file.tar files - tar files into file.tar
 tar xf file.tar - untar into current directory
 tar tf file.tar - show contents of archive
@@ -26,6 +28,21 @@ options :
 - k : do not overwrite
 - T : files from file
 - v : verbose
+
+### Zip file
+
+- zip -r existing.zip myfolder/
+- zip existing.zip --out new.zip -s 50m
+
+## SSH
+
+### Prevent broken pipe
+
+sudo vim /etc/ssh/ssh_config
+
+```bash
+ServerAliveInterval 120
+```
 
 ## CURL
 
