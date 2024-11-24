@@ -1,5 +1,6 @@
-- Git Clone Bash_Utils
-- Install Bash_Utils
-- Run workspace/setup.sh
-- Copy SSH.pub (config GitLab & GitHub) `bash cat ~/.ssh/id_rsa.pub`
-- Install PyEnv `bash  cat $(cheatsheet-ls | grep py)`
+- [X] ssh-keygen
+- [X] Copy SSH.pub (config GitLab & GitHub) `bash cat ~/.ssh/id_rsa.pub`
+- [X] Git Clone bash_utils
+- [X] Install bash_utils
+- [ ] Cat and Run workspace/setup.sh
+- [ ] Install asdf (https://asdf-vm.com/)
